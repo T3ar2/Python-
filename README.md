@@ -1,4 +1,4 @@
-##preparar o ambiente o Python
+# preparar o ambiente o Python
 1. Abrir o VS Code
 2. No terminal do VSCode
 - Criar o ambiente do python isolado dentro do projeto
@@ -21,12 +21,12 @@ python -m venv --upgrade-deps venv
 .venv\Scripts\Activate
 '''
 
-##Após instalar as dependências do projeto
+## Após instalar as dependências do projeto
 '''
 pip freeze > requirements.txt
 '''
 
-##A cada aula, baixe o requirements.txt e instale as dependências
+## A cada aula, baixe o requirements.txt e instale as dependências
 '''
 pip install -r requirements.txt
 '''
