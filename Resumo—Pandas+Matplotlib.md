@@ -174,3 +174,20 @@ plt.ylabel("")
 
 plt.show()
 ```
+
+`autopct="%1.1f%%"` mostra a porcentagem.
+
+## Barras horizontais
+
+Igual ao gráfico de barras, mas na horizontal.
+
+
+```python
+dados["CHAS"].value_counts().plot(kind="barh")
+
+plt.title("Quantidade por categoria")
+plt.xlabel("Quantidade")
+plt.ylabel("Categoria")
+
+plt.show()
+```
