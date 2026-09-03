@@ -114,3 +114,63 @@ plt.ylabel("Quantidade")
 
 plt.show()
 ```
+## Gráfico de linha
+
+Bom para mostrar evolução, sequência ou mudanças ao longo do tempo.
+```python
+plt.plot(dados["CRIM"])
+
+plt.title("Valores de CRIM")
+plt.xlabel("Índice")
+plt.ylabel("CRIM")
+
+plt.show()
+```
+
+Comparando duas variáveis:
+
+
+```python
+
+plt.plot(dados["CRIM"], label="CRIM")
+plt.plot(dados["MEDV"], label="MEDV")
+
+plt.title("Comparação de variáveis")
+plt.xlabel("Índice")
+plt.ylabel("Valor")
+
+plt.legend()
+
+plt.show()
+```
+
+### Boxplot
+
+Mostra a distribuição, mediana, quartis e possíveis outliers.
+
+
+```python
+plt.boxplot(dados["CRIM"].dropna())
+
+plt.title("Boxplot de CRIM")
+plt.ylabel("CRIM")
+
+plt.show()
+```
+
+## Gráfico de pizza
+
+Mostra a proporção das categorias.
+
+
+```python
+dados["CHAS"].value_counts().plot(
+    kind="pie",
+    autopct="%1.1f%%"
+)
+
+plt.title("Distribuição de CHAS")
+plt.ylabel("")
+
+plt.show()
+```
